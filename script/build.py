@@ -11,7 +11,8 @@ def main():
   (args, _) = parser.parse_known_args()
 
   # Fetch Skia
-  build_type = 'Debug' if args.debug else 'Release'
+  # build_type = 'Debug' if args.debug else 'Release'
+  build_type = 'Debug'
   if args.skia_dir:
     skia_dir = os.path.abspath(args.skia_dir)
     os.chdir(common.basedir + '/platform')
